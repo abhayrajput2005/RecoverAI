@@ -1,0 +1,1802 @@
+[
+  {
+    "case_id": "RC-1099",
+    "payment_id": "pay_92f18020937d43",
+    "customer_id": "cust_8aa9f00c",
+    "amount": 3258.59,
+    "currency": "INR",
+    "payment_method": "card",
+    "failed_at": "2026-07-23T12:42:06.734753Z",
+    "failure_code": "FRAUD_FLAG",
+    "gateway_message": "Transaction flagged for suspected fraud",
+    "retry_count": 2,
+    "customer_history": {
+      "successful_payments_last_90d": 4,
+      "failed_payments_last_90d": 2,
+      "is_subscription": true
+    },
+    "bucket_label": "adversarial"
+  },
+  {
+    "case_id": "RC-1055",
+    "payment_id": "pay_036f1d9a90f444",
+    "customer_id": "cust_d2a0a08f",
+    "amount": 1844.45,
+    "currency": "INR",
+    "payment_method": "upi",
+    "failed_at": "2026-08-12T18:33:06.734203Z",
+    "failure_code": "UNKNOWN_DECLINE",
+    "gateway_message": "Transaction declined \u2014 no reason provided by bank",
+    "retry_count": 2,
+    "customer_history": {
+      "successful_payments_last_90d": 8,
+      "failed_payments_last_90d": 5,
+      "is_subscription": true
+    },
+    "bucket_label": "ambiguous"
+  },
+  {
+    "case_id": "RC-1062",
+    "payment_id": "pay_b2ba19ed843146",
+    "customer_id": "cust_4f0cef8a",
+    "amount": 6940.75,
+    "currency": "INR",
+    "payment_method": "upi",
+    "failed_at": "2026-08-09T18:46:06.734297Z",
+    "failure_code": "UNKNOWN_DECLINE",
+    "gateway_message": "Transaction declined \u2014 no reason provided by bank",
+    "retry_count": 2,
+    "customer_history": {
+      "successful_payments_last_90d": 3,
+      "failed_payments_last_90d": 5,
+      "is_subscription": true
+    },
+    "bucket_label": "ambiguous"
+  },
+  {
+    "case_id": "RC-1056",
+    "payment_id": "pay_c5d929afd41744",
+    "customer_id": "cust_dc87163d",
+    "amount": 4006.08,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "failed_at": "2026-08-19T16:02:06.734219Z",
+    "failure_code": "CHECKOUT_ABANDONED",
+    "gateway_message": "Customer closed checkout before completing payment",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 3,
+      "failed_payments_last_90d": 2,
+      "is_subscription": true
+    },
+    "bucket_label": "ambiguous"
+  },
+  {
+    "case_id": "RC-1067",
+    "payment_id": "pay_81209e50036f48",
+    "customer_id": "cust_40ed9ea3",
+    "amount": 7280.86,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "failed_at": "2026-07-26T05:28:06.734357Z",
+    "failure_code": "GATEWAY_ERROR_5XX",
+    "gateway_message": "Payment could not be processed at this time",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 0,
+      "failed_payments_last_90d": 5,
+      "is_subscription": false
+    },
+    "bucket_label": "ambiguous"
+  },
+  {
+    "case_id": "RC-1030",
+    "payment_id": "pay_be87c655f8ba46",
+    "customer_id": "cust_51414d98",
+    "amount": 6180.94,
+    "currency": "INR",
+    "payment_method": "upi",
+    "failed_at": "2026-08-15T21:38:06.733748Z",
+    "failure_code": "INSUFFICIENT_FUNDS",
+    "gateway_message": "Insufficient balance in account",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 3,
+      "failed_payments_last_90d": 3,
+      "is_subscription": true
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1057",
+    "payment_id": "pay_fc5e1d005f1b49",
+    "customer_id": "cust_0ddbc3c8",
+    "amount": 5276.02,
+    "currency": "INR",
+    "payment_method": "upi",
+    "failed_at": "2026-08-02T07:14:06.734233Z",
+    "failure_code": "GATEWAY_ERROR_5XX",
+    "gateway_message": "Payment could not be processed at this time",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 0,
+      "failed_payments_last_90d": 4,
+      "is_subscription": true
+    },
+    "bucket_label": "ambiguous"
+  },
+  {
+    "case_id": "RC-1088",
+    "payment_id": "pay_c77872c0f7604f",
+    "customer_id": "cust_da1d531e",
+    "amount": 5269.16,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "failed_at": "2026-08-03T22:34:06.734619Z",
+    "failure_code": "MAX_RETRIES_EXCEEDED",
+    "gateway_message": "Payment already retried 3+ times with no success",
+    "retry_count": 4,
+    "customer_history": {
+      "successful_payments_last_90d": 2,
+      "failed_payments_last_90d": 3,
+      "is_subscription": false
+    },
+    "bucket_label": "edge"
+  },
+  {
+    "case_id": "RC-1072",
+    "payment_id": "pay_f9f6e30da9ea42",
+    "customer_id": "cust_2226c9e4",
+    "amount": 4412.44,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "failed_at": "2026-07-26T17:52:06.734421Z",
+    "failure_code": "CHURNED_CUSTOMER",
+    "gateway_message": "Customer subscription cancelled prior to this charge",
+    "retry_count": 5,
+    "customer_history": {
+      "successful_payments_last_90d": 8,
+      "failed_payments_last_90d": 3,
+      "is_subscription": true
+    },
+    "bucket_label": "edge"
+  },
+  {
+    "case_id": "RC-1090",
+    "payment_id": "pay_1b3d6df4a04c40",
+    "customer_id": "cust_907f56cb",
+    "amount": 7125.23,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "failed_at": "2026-08-20T01:07:06.734643Z",
+    "failure_code": "FRAUD_FLAG",
+    "gateway_message": "Transaction flagged for suspected fraud",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 10,
+      "failed_payments_last_90d": 5,
+      "is_subscription": true
+    },
+    "bucket_label": "adversarial"
+  },
+  {
+    "case_id": "RC-1089",
+    "payment_id": "pay_55ada84e839943",
+    "customer_id": "cust_3f404ad8",
+    "amount": 3408.87,
+    "currency": "INR",
+    "payment_method": "upi",
+    "failed_at": "2026-07-26T11:14:06.734631Z",
+    "failure_code": "MANDATE_CANCELLED",
+    "gateway_message": "UPI/e-mandate was cancelled by the customer",
+    "retry_count": 3,
+    "customer_history": {
+      "successful_payments_last_90d": 10,
+      "failed_payments_last_90d": 2,
+      "is_subscription": true
+    },
+    "bucket_label": "edge"
+  },
+  {
+    "case_id": "RC-1002",
+    "payment_id": "pay_27095a8addae44",
+    "customer_id": "cust_fcc45b7d",
+    "amount": 2942.47,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "failed_at": "2026-07-26T10:42:06.733373Z",
+    "failure_code": "BANK_DECLINE_GENERIC",
+    "gateway_message": "Declined by issuing bank",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 4,
+      "failed_payments_last_90d": 0,
+      "is_subscription": false
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1025",
+    "payment_id": "pay_d8623caad0084c",
+    "customer_id": "cust_1e468374",
+    "amount": 5203.1,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "failed_at": "2026-08-06T07:04:06.733685Z",
+    "failure_code": "BANK_DECLINE_GENERIC",
+    "gateway_message": "Declined by issuing bank",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 0,
+      "failed_payments_last_90d": 0,
+      "is_subscription": false
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1060",
+    "payment_id": "pay_7df5c8e8e30b46",
+    "customer_id": "cust_46ef3de7",
+    "amount": 2394.54,
+    "currency": "INR",
+    "payment_method": "card",
+    "failed_at": "2026-08-02T23:14:06.734271Z",
+    "failure_code": "NETWORK_TIMEOUT",
+    "gateway_message": "Request timed out during authorization",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 12,
+      "failed_payments_last_90d": 1,
+      "is_subscription": false
+    },
+    "bucket_label": "ambiguous"
+  },
+  {
+    "case_id": "RC-1004",
+    "payment_id": "pay_39dbc2737c3041",
+    "customer_id": "cust_64cc5bd0",
+    "amount": 4822.28,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "failed_at": "2026-08-17T10:58:06.733401Z",
+    "failure_code": "BANK_DECLINE_GENERIC",
+    "gateway_message": "Declined by issuing bank",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 3,
+      "failed_payments_last_90d": 5,
+      "is_subscription": true
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1006",
+    "payment_id": "pay_d43dc5b5489f4b",
+    "customer_id": "cust_dbe59b65",
+    "amount": 7080.39,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "failed_at": "2026-08-16T01:49:06.733428Z",
+    "failure_code": "INSUFFICIENT_FUNDS",
+    "gateway_message": "Insufficient balance in account",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 6,
+      "failed_payments_last_90d": 5,
+      "is_subscription": true
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1081",
+    "payment_id": "pay_de2e3eefd38345",
+    "customer_id": "cust_740dffb4",
+    "amount": 7337.89,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "failed_at": "2026-08-14T21:44:06.734533Z",
+    "failure_code": "MANDATE_CANCELLED",
+    "gateway_message": "UPI/e-mandate was cancelled by the customer",
+    "retry_count": 4,
+    "customer_history": {
+      "successful_payments_last_90d": 10,
+      "failed_payments_last_90d": 5,
+      "is_subscription": false
+    },
+    "bucket_label": "edge"
+  },
+  {
+    "case_id": "RC-1085",
+    "payment_id": "pay_f5563b7452fb4f",
+    "customer_id": "cust_083d0422",
+    "amount": 3070.97,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "failed_at": "2026-08-20T10:20:06.734583Z",
+    "failure_code": "DUPLICATE_CHARGE_ATTEMPT",
+    "gateway_message": "Possible duplicate of a recent successful payment",
+    "retry_count": 5,
+    "customer_history": {
+      "successful_payments_last_90d": 4,
+      "failed_payments_last_90d": 4,
+      "is_subscription": true
+    },
+    "bucket_label": "edge"
+  },
+  {
+    "case_id": "RC-1012",
+    "payment_id": "pay_3fb52a22d67b4c",
+    "customer_id": "cust_9d00c4ae",
+    "amount": 7338.19,
+    "currency": "INR",
+    "payment_method": "upi",
+    "failed_at": "2026-08-18T00:50:06.733503Z",
+    "failure_code": "CARD_EXPIRED",
+    "gateway_message": "Card expired",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 8,
+      "failed_payments_last_90d": 1,
+      "is_subscription": true
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1033",
+    "payment_id": "pay_4630f5593d7d46",
+    "customer_id": "cust_4dd77f11",
+    "amount": 7060.93,
+    "currency": "INR",
+    "payment_method": "upi",
+    "failed_at": "2026-08-11T09:16:06.733827Z",
+    "failure_code": "INSUFFICIENT_FUNDS",
+    "gateway_message": "Insufficient balance in account",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 10,
+      "failed_payments_last_90d": 2,
+      "is_subscription": false
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1001",
+    "payment_id": "pay_8f528821a7154c",
+    "customer_id": "cust_2d6eff17",
+    "amount": 1770.24,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "failed_at": "2026-07-28T21:32:06.733352Z",
+    "failure_code": "INSUFFICIENT_FUNDS",
+    "gateway_message": "Insufficient balance in account",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 12,
+      "failed_payments_last_90d": 1,
+      "is_subscription": false
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1037",
+    "payment_id": "pay_913dd74db6b44d",
+    "customer_id": "cust_f85747e9",
+    "amount": 6663.11,
+    "currency": "INR",
+    "payment_method": "upi",
+    "failed_at": "2026-07-30T23:56:06.733881Z",
+    "failure_code": "INSUFFICIENT_FUNDS",
+    "gateway_message": "Insufficient balance in account",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 7,
+      "failed_payments_last_90d": 3,
+      "is_subscription": true
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1052",
+    "payment_id": "pay_ac86083aac324a",
+    "customer_id": "cust_0efbe537",
+    "amount": 1709.08,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "failed_at": "2026-08-12T13:24:06.734160Z",
+    "failure_code": "NETWORK_TIMEOUT",
+    "gateway_message": "Request timed out during authorization",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 9,
+      "failed_payments_last_90d": 5,
+      "is_subscription": false
+    },
+    "bucket_label": "ambiguous"
+  },
+  {
+    "case_id": "RC-1016",
+    "payment_id": "pay_3a20e631626440",
+    "customer_id": "cust_c0e4263e",
+    "amount": 548.16,
+    "currency": "INR",
+    "payment_method": "card",
+    "failed_at": "2026-08-21T09:34:06.733566Z",
+    "failure_code": "UPI_MANDATE_TIMEOUT",
+    "gateway_message": "UPI mandate approval timed out",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 5,
+      "failed_payments_last_90d": 0,
+      "is_subscription": true
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1015",
+    "payment_id": "pay_19288cb0d2db44",
+    "customer_id": "cust_8d424ce7",
+    "amount": 5466.64,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "failed_at": "2026-08-15T06:29:06.733554Z",
+    "failure_code": "CARD_EXPIRED",
+    "gateway_message": "Card expired",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 6,
+      "failed_payments_last_90d": 1,
+      "is_subscription": true
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1066",
+    "payment_id": "pay_19b2d38db7524c",
+    "customer_id": "cust_2bae9308",
+    "amount": 6454.34,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "failed_at": "2026-08-08T23:49:06.734346Z",
+    "failure_code": "NETWORK_TIMEOUT",
+    "gateway_message": "Request timed out during authorization",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 4,
+      "failed_payments_last_90d": 5,
+      "is_subscription": false
+    },
+    "bucket_label": "ambiguous"
+  },
+  {
+    "case_id": "RC-1040",
+    "payment_id": "pay_c29919ae701647",
+    "customer_id": "cust_4b8aaa4e",
+    "amount": 3383.06,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "failed_at": "2026-08-15T13:59:06.733922Z",
+    "failure_code": "CHECKOUT_ABANDONED",
+    "gateway_message": "Customer closed checkout before completing payment",
+    "retry_count": 2,
+    "customer_history": {
+      "successful_payments_last_90d": 5,
+      "failed_payments_last_90d": 4,
+      "is_subscription": true
+    },
+    "bucket_label": "ambiguous"
+  },
+  {
+    "case_id": "RC-1059",
+    "payment_id": "pay_ce12c508f0bd4d",
+    "customer_id": "cust_6a3af598",
+    "amount": 12219.25,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "failed_at": "2026-08-03T02:30:06.734258Z",
+    "failure_code": "GATEWAY_ERROR_5XX",
+    "gateway_message": "Payment could not be processed at this time",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 9,
+      "failed_payments_last_90d": 1,
+      "is_subscription": false
+    },
+    "bucket_label": "ambiguous"
+  },
+  {
+    "case_id": "RC-1048",
+    "payment_id": "pay_609ead53c8e048",
+    "customer_id": "cust_32131bd6",
+    "amount": 13303.27,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "failed_at": "2026-08-10T00:08:06.734018Z",
+    "failure_code": "GATEWAY_ERROR_5XX",
+    "gateway_message": "Payment could not be processed at this time",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 1,
+      "failed_payments_last_90d": 4,
+      "is_subscription": false
+    },
+    "bucket_label": "ambiguous"
+  },
+  {
+    "case_id": "RC-1045",
+    "payment_id": "pay_1fb718ce660a47",
+    "customer_id": "cust_36de6eb5",
+    "amount": 5745.04,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "failed_at": "2026-08-14T09:04:06.733982Z",
+    "failure_code": "UNKNOWN_DECLINE",
+    "gateway_message": "Transaction declined \u2014 no reason provided by bank",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 1,
+      "failed_payments_last_90d": 3,
+      "is_subscription": true
+    },
+    "bucket_label": "ambiguous"
+  },
+  {
+    "case_id": "RC-1075",
+    "payment_id": "pay_f76a849642844d",
+    "customer_id": "cust_0a3534ab",
+    "amount": 7279.18,
+    "currency": "INR",
+    "payment_method": "card",
+    "failed_at": "2026-08-07T13:59:06.734455Z",
+    "failure_code": "MANDATE_CANCELLED",
+    "gateway_message": "UPI/e-mandate was cancelled by the customer",
+    "retry_count": 3,
+    "customer_history": {
+      "successful_payments_last_90d": 9,
+      "failed_payments_last_90d": 5,
+      "is_subscription": true
+    },
+    "bucket_label": "edge"
+  },
+  {
+    "case_id": "RC-1022",
+    "payment_id": "pay_731db0e069b04b",
+    "customer_id": "cust_25ca4cb8",
+    "amount": 3059.03,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "failed_at": "2026-08-08T11:21:06.733649Z",
+    "failure_code": "BANK_DECLINE_GENERIC",
+    "gateway_message": "Declined by issuing bank",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 12,
+      "failed_payments_last_90d": 0,
+      "is_subscription": true
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1007",
+    "payment_id": "pay_19275fbbd1ed4b",
+    "customer_id": "cust_68977788",
+    "amount": 5640.55,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "failed_at": "2026-07-25T03:55:06.733440Z",
+    "failure_code": "BANK_DECLINE_GENERIC",
+    "gateway_message": "Declined by issuing bank",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 5,
+      "failed_payments_last_90d": 1,
+      "is_subscription": false
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1032",
+    "payment_id": "pay_82759511bb6142",
+    "customer_id": "cust_c71d24c8",
+    "amount": 5930.25,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "failed_at": "2026-08-03T06:13:06.733807Z",
+    "failure_code": "BANK_DECLINE_GENERIC",
+    "gateway_message": "Declined by issuing bank",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 6,
+      "failed_payments_last_90d": 4,
+      "is_subscription": true
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1093",
+    "payment_id": "pay_de1ee9c00fa648",
+    "customer_id": "cust_c5177866",
+    "amount": 4016.73,
+    "currency": "INR",
+    "payment_method": "card",
+    "failed_at": "2026-08-07T07:31:06.734682Z",
+    "failure_code": "CARD_REPORTED_LOST",
+    "gateway_message": "Card reported lost/stolen by cardholder",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 5,
+      "failed_payments_last_90d": 4,
+      "is_subscription": true
+    },
+    "bucket_label": "adversarial"
+  },
+  {
+    "case_id": "RC-1042",
+    "payment_id": "pay_6b0b7fd406514e",
+    "customer_id": "cust_9d833fee",
+    "amount": 5777.12,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "failed_at": "2026-08-07T21:58:06.733947Z",
+    "failure_code": "NETWORK_TIMEOUT",
+    "gateway_message": "Request timed out during authorization",
+    "retry_count": 2,
+    "customer_history": {
+      "successful_payments_last_90d": 4,
+      "failed_payments_last_90d": 3,
+      "is_subscription": false
+    },
+    "bucket_label": "ambiguous"
+  },
+  {
+    "case_id": "RC-1095",
+    "payment_id": "pay_19a68dc599e94f",
+    "customer_id": "cust_4b0e1ce5",
+    "amount": 9373.44,
+    "currency": "INR",
+    "payment_method": "upi",
+    "failed_at": "2026-08-20T18:03:06.734706Z",
+    "failure_code": "CARD_REPORTED_LOST_2",
+    "gateway_message": "Issuer confirms card blocked \u2014 lost/stolen report on file",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 9,
+      "failed_payments_last_90d": 5,
+      "is_subscription": true
+    },
+    "bucket_label": "adversarial"
+  },
+  {
+    "case_id": "RC-1041",
+    "payment_id": "pay_665609765ccb47",
+    "customer_id": "cust_749598c1",
+    "amount": 622.08,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "failed_at": "2026-08-12T04:51:06.733934Z",
+    "failure_code": "CHECKOUT_ABANDONED",
+    "gateway_message": "Customer closed checkout before completing payment",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 6,
+      "failed_payments_last_90d": 0,
+      "is_subscription": true
+    },
+    "bucket_label": "ambiguous"
+  },
+  {
+    "case_id": "RC-1068",
+    "payment_id": "pay_f642dc9802704a",
+    "customer_id": "cust_be12abe4",
+    "amount": 5709.86,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "failed_at": "2026-07-29T21:07:06.734369Z",
+    "failure_code": "NETWORK_TIMEOUT",
+    "gateway_message": "Request timed out during authorization",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 4,
+      "failed_payments_last_90d": 4,
+      "is_subscription": true
+    },
+    "bucket_label": "ambiguous"
+  },
+  {
+    "case_id": "RC-1031",
+    "payment_id": "pay_8d21fb916d9f4a",
+    "customer_id": "cust_ec6fb13f",
+    "amount": 7361.45,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "failed_at": "2026-07-23T22:13:06.733761Z",
+    "failure_code": "INSUFFICIENT_FUNDS",
+    "gateway_message": "Insufficient balance in account",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 4,
+      "failed_payments_last_90d": 1,
+      "is_subscription": true
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1063",
+    "payment_id": "pay_4d338eaccc0e48",
+    "customer_id": "cust_b5a749cc",
+    "amount": 4523.57,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "failed_at": "2026-08-08T18:51:06.734309Z",
+    "failure_code": "UNKNOWN_DECLINE",
+    "gateway_message": "Transaction declined \u2014 no reason provided by bank",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 11,
+      "failed_payments_last_90d": 2,
+      "is_subscription": false
+    },
+    "bucket_label": "ambiguous"
+  },
+  {
+    "case_id": "RC-1086",
+    "payment_id": "pay_1ec76deae1c546",
+    "customer_id": "cust_3b44bbb7",
+    "amount": 946.34,
+    "currency": "INR",
+    "payment_method": "upi",
+    "failed_at": "2026-08-07T21:41:06.734595Z",
+    "failure_code": "CHURNED_CUSTOMER",
+    "gateway_message": "Customer subscription cancelled prior to this charge",
+    "retry_count": 4,
+    "customer_history": {
+      "successful_payments_last_90d": 8,
+      "failed_payments_last_90d": 2,
+      "is_subscription": false
+    },
+    "bucket_label": "edge"
+  },
+  {
+    "case_id": "RC-1017",
+    "payment_id": "pay_2c55b69ad93144",
+    "customer_id": "cust_108ba108",
+    "amount": 1986.08,
+    "currency": "INR",
+    "payment_method": "card",
+    "failed_at": "2026-08-08T05:14:06.733578Z",
+    "failure_code": "CARD_EXPIRED",
+    "gateway_message": "Card expired",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 0,
+      "failed_payments_last_90d": 5,
+      "is_subscription": false
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1050",
+    "payment_id": "pay_da4295f04c8e43",
+    "customer_id": "cust_3b9e0756",
+    "amount": 2812.08,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "failed_at": "2026-07-31T17:53:06.734043Z",
+    "failure_code": "UNKNOWN_DECLINE",
+    "gateway_message": "Transaction declined \u2014 no reason provided by bank",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 2,
+      "failed_payments_last_90d": 5,
+      "is_subscription": true
+    },
+    "bucket_label": "ambiguous"
+  },
+  {
+    "case_id": "RC-1087",
+    "payment_id": "pay_7851d2b2b35944",
+    "customer_id": "cust_a9066404",
+    "amount": 3150.97,
+    "currency": "INR",
+    "payment_method": "upi",
+    "failed_at": "2026-08-21T21:01:06.734606Z",
+    "failure_code": "MAX_RETRIES_EXCEEDED",
+    "gateway_message": "Payment already retried 3+ times with no success",
+    "retry_count": 4,
+    "customer_history": {
+      "successful_payments_last_90d": 7,
+      "failed_payments_last_90d": 0,
+      "is_subscription": true
+    },
+    "bucket_label": "edge"
+  },
+  {
+    "case_id": "RC-1053",
+    "payment_id": "pay_ea1357d1c9f34e",
+    "customer_id": "cust_60c015d3",
+    "amount": 4230.55,
+    "currency": "INR",
+    "payment_method": "upi",
+    "failed_at": "2026-07-31T06:39:06.734177Z",
+    "failure_code": "GATEWAY_ERROR_5XX",
+    "gateway_message": "Payment could not be processed at this time",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 11,
+      "failed_payments_last_90d": 3,
+      "is_subscription": true
+    },
+    "bucket_label": "ambiguous"
+  },
+  {
+    "case_id": "RC-1074",
+    "payment_id": "pay_1c37da0da02445",
+    "customer_id": "cust_6c710115",
+    "amount": 422.09,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "failed_at": "2026-07-26T18:25:06.734444Z",
+    "failure_code": "MANDATE_CANCELLED",
+    "gateway_message": "UPI/e-mandate was cancelled by the customer",
+    "retry_count": 5,
+    "customer_history": {
+      "successful_payments_last_90d": 7,
+      "failed_payments_last_90d": 0,
+      "is_subscription": true
+    },
+    "bucket_label": "edge"
+  },
+  {
+    "case_id": "RC-1058",
+    "payment_id": "pay_db4b0fd178b740",
+    "customer_id": "cust_c5f132b2",
+    "amount": 6483.66,
+    "currency": "INR",
+    "payment_method": "card",
+    "failed_at": "2026-07-27T19:55:06.734245Z",
+    "failure_code": "NETWORK_TIMEOUT",
+    "gateway_message": "Request timed out during authorization",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 7,
+      "failed_payments_last_90d": 0,
+      "is_subscription": true
+    },
+    "bucket_label": "ambiguous"
+  },
+  {
+    "case_id": "RC-1009",
+    "payment_id": "pay_7b5702017e0249",
+    "customer_id": "cust_76491b93",
+    "amount": 4096.73,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "failed_at": "2026-07-29T01:59:06.733464Z",
+    "failure_code": "BANK_DECLINE_GENERIC",
+    "gateway_message": "Declined by issuing bank",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 1,
+      "failed_payments_last_90d": 2,
+      "is_subscription": true
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1065",
+    "payment_id": "pay_855191d9c6e84b",
+    "customer_id": "cust_b800e0b2",
+    "amount": 4938.59,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "failed_at": "2026-08-17T03:53:06.734333Z",
+    "failure_code": "GATEWAY_ERROR_5XX",
+    "gateway_message": "Payment could not be processed at this time",
+    "retry_count": 2,
+    "customer_history": {
+      "successful_payments_last_90d": 10,
+      "failed_payments_last_90d": 3,
+      "is_subscription": false
+    },
+    "bucket_label": "ambiguous"
+  },
+  {
+    "case_id": "RC-1005",
+    "payment_id": "pay_2c9091eb805d4e",
+    "customer_id": "cust_0595e44b",
+    "amount": 2939.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "failed_at": "2026-08-01T11:27:06.733416Z",
+    "failure_code": "INSUFFICIENT_FUNDS",
+    "gateway_message": "Insufficient balance in account",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 12,
+      "failed_payments_last_90d": 0,
+      "is_subscription": true
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1038",
+    "payment_id": "pay_b332c0e31e0d42",
+    "customer_id": "cust_a85f214e",
+    "amount": 5264.95,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "failed_at": "2026-08-21T05:05:06.733893Z",
+    "failure_code": "INSUFFICIENT_FUNDS",
+    "gateway_message": "Insufficient balance in account",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 1,
+      "failed_payments_last_90d": 3,
+      "is_subscription": true
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1036",
+    "payment_id": "pay_e18a5b87ce7842",
+    "customer_id": "cust_d1089da8",
+    "amount": 2613.63,
+    "currency": "INR",
+    "payment_method": "upi",
+    "failed_at": "2026-08-01T13:06:06.733870Z",
+    "failure_code": "CARD_EXPIRED",
+    "gateway_message": "Card expired",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 12,
+      "failed_payments_last_90d": 1,
+      "is_subscription": true
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1049",
+    "payment_id": "pay_e86cd27f2e2e4d",
+    "customer_id": "cust_00fd9315",
+    "amount": 1039.75,
+    "currency": "INR",
+    "payment_method": "card",
+    "failed_at": "2026-08-11T04:53:06.734032Z",
+    "failure_code": "CHECKOUT_ABANDONED",
+    "gateway_message": "Customer closed checkout before completing payment",
+    "retry_count": 2,
+    "customer_history": {
+      "successful_payments_last_90d": 10,
+      "failed_payments_last_90d": 2,
+      "is_subscription": true
+    },
+    "bucket_label": "ambiguous"
+  },
+  {
+    "case_id": "RC-1020",
+    "payment_id": "pay_b9e3810235f546",
+    "customer_id": "cust_f70e4dc3",
+    "amount": 6907.5,
+    "currency": "INR",
+    "payment_method": "upi",
+    "failed_at": "2026-08-21T06:15:06.733620Z",
+    "failure_code": "INSUFFICIENT_FUNDS",
+    "gateway_message": "Insufficient balance in account",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 2,
+      "failed_payments_last_90d": 0,
+      "is_subscription": true
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1046",
+    "payment_id": "pay_f2da1324bc9241",
+    "customer_id": "cust_a304233d",
+    "amount": 4940.4,
+    "currency": "INR",
+    "payment_method": "card",
+    "failed_at": "2026-07-23T15:08:06.733994Z",
+    "failure_code": "GATEWAY_ERROR_5XX",
+    "gateway_message": "Payment could not be processed at this time",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 0,
+      "failed_payments_last_90d": 4,
+      "is_subscription": true
+    },
+    "bucket_label": "ambiguous"
+  },
+  {
+    "case_id": "RC-1097",
+    "payment_id": "pay_ecddd2e7b21c4d",
+    "customer_id": "cust_92a18838",
+    "amount": 3483.22,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "failed_at": "2026-07-30T19:00:06.734730Z",
+    "failure_code": "ACCOUNT_CLOSED",
+    "gateway_message": "Bank account closed",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 6,
+      "failed_payments_last_90d": 2,
+      "is_subscription": false
+    },
+    "bucket_label": "adversarial"
+  },
+  {
+    "case_id": "RC-1070",
+    "payment_id": "pay_0172539e401d41",
+    "customer_id": "cust_def6a14b",
+    "amount": 1281.69,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "failed_at": "2026-08-06T00:03:06.734394Z",
+    "failure_code": "DUPLICATE_CHARGE_ATTEMPT",
+    "gateway_message": "Possible duplicate of a recent successful payment",
+    "retry_count": 4,
+    "customer_history": {
+      "successful_payments_last_90d": 6,
+      "failed_payments_last_90d": 3,
+      "is_subscription": false
+    },
+    "bucket_label": "edge"
+  },
+  {
+    "case_id": "RC-1010",
+    "payment_id": "pay_4738bd77a1194b",
+    "customer_id": "cust_ea5c0bbe",
+    "amount": 5750.42,
+    "currency": "INR",
+    "payment_method": "card",
+    "failed_at": "2026-07-26T02:01:06.733476Z",
+    "failure_code": "UPI_MANDATE_TIMEOUT",
+    "gateway_message": "UPI mandate approval timed out",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 10,
+      "failed_payments_last_90d": 4,
+      "is_subscription": false
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1021",
+    "payment_id": "pay_9348191752064f",
+    "customer_id": "cust_9cec3b83",
+    "amount": 442.1,
+    "currency": "INR",
+    "payment_method": "card",
+    "failed_at": "2026-08-09T00:43:06.733633Z",
+    "failure_code": "CARD_EXPIRED",
+    "gateway_message": "Card expired",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 9,
+      "failed_payments_last_90d": 4,
+      "is_subscription": true
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1029",
+    "payment_id": "pay_8b461f68215e4f",
+    "customer_id": "cust_2b99e013",
+    "amount": 6500.87,
+    "currency": "INR",
+    "payment_method": "upi",
+    "failed_at": "2026-08-14T16:30:06.733736Z",
+    "failure_code": "INSUFFICIENT_FUNDS",
+    "gateway_message": "Insufficient balance in account",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 11,
+      "failed_payments_last_90d": 0,
+      "is_subscription": true
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1026",
+    "payment_id": "pay_52d07369281040",
+    "customer_id": "cust_393531e0",
+    "amount": 2075.37,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "failed_at": "2026-08-04T23:53:06.733697Z",
+    "failure_code": "BANK_DECLINE_GENERIC",
+    "gateway_message": "Declined by issuing bank",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 8,
+      "failed_payments_last_90d": 0,
+      "is_subscription": true
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1024",
+    "payment_id": "pay_4d71e820dfa34b",
+    "customer_id": "cust_b016ba77",
+    "amount": 911.36,
+    "currency": "INR",
+    "payment_method": "upi",
+    "failed_at": "2026-08-14T18:24:06.733673Z",
+    "failure_code": "BANK_DECLINE_GENERIC",
+    "gateway_message": "Declined by issuing bank",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 1,
+      "failed_payments_last_90d": 5,
+      "is_subscription": true
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1098",
+    "payment_id": "pay_a44727a4c67245",
+    "customer_id": "cust_6c2474b7",
+    "amount": 9451.19,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "failed_at": "2026-08-18T22:33:06.734741Z",
+    "failure_code": "FRAUD_FLAG",
+    "gateway_message": "Transaction flagged for suspected fraud",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 5,
+      "failed_payments_last_90d": 1,
+      "is_subscription": true
+    },
+    "bucket_label": "adversarial"
+  },
+  {
+    "case_id": "RC-1011",
+    "payment_id": "pay_a5fa198f6b904a",
+    "customer_id": "cust_f343e7a5",
+    "amount": 4552.24,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "failed_at": "2026-08-22T18:21:06.733488Z",
+    "failure_code": "CARD_EXPIRED",
+    "gateway_message": "Card expired",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 5,
+      "failed_payments_last_90d": 2,
+      "is_subscription": true
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1083",
+    "payment_id": "pay_f1720d30dc114d",
+    "customer_id": "cust_6273af76",
+    "amount": 5532.84,
+    "currency": "INR",
+    "payment_method": "card",
+    "failed_at": "2026-07-24T13:00:06.734560Z",
+    "failure_code": "DUPLICATE_CHARGE_ATTEMPT",
+    "gateway_message": "Possible duplicate of a recent successful payment",
+    "retry_count": 4,
+    "customer_history": {
+      "successful_payments_last_90d": 11,
+      "failed_payments_last_90d": 3,
+      "is_subscription": true
+    },
+    "bucket_label": "edge"
+  },
+  {
+    "case_id": "RC-1069",
+    "payment_id": "pay_6a2c8003dc7647",
+    "customer_id": "cust_2f10bce7",
+    "amount": 18710.38,
+    "currency": "INR",
+    "payment_method": "upi",
+    "failed_at": "2026-07-31T17:01:06.734380Z",
+    "failure_code": "UNKNOWN_DECLINE",
+    "gateway_message": "Transaction declined \u2014 no reason provided by bank",
+    "retry_count": 2,
+    "customer_history": {
+      "successful_payments_last_90d": 8,
+      "failed_payments_last_90d": 0,
+      "is_subscription": true
+    },
+    "bucket_label": "ambiguous"
+  },
+  {
+    "case_id": "RC-1008",
+    "payment_id": "pay_a7081edbaf4846",
+    "customer_id": "cust_a573f02b",
+    "amount": 1325.87,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "failed_at": "2026-08-03T19:56:06.733451Z",
+    "failure_code": "CARD_EXPIRED",
+    "gateway_message": "Card expired",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 6,
+      "failed_payments_last_90d": 4,
+      "is_subscription": false
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1051",
+    "payment_id": "pay_c2ea90938bab40",
+    "customer_id": "cust_3367fad6",
+    "amount": 2518.94,
+    "currency": "INR",
+    "payment_method": "upi",
+    "failed_at": "2026-07-27T20:03:06.734055Z",
+    "failure_code": "UNKNOWN_DECLINE",
+    "gateway_message": "Transaction declined \u2014 no reason provided by bank",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 7,
+      "failed_payments_last_90d": 1,
+      "is_subscription": false
+    },
+    "bucket_label": "ambiguous"
+  },
+  {
+    "case_id": "RC-1018",
+    "payment_id": "pay_66eefb246a5a4b",
+    "customer_id": "cust_eda96f63",
+    "amount": 1721.04,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "failed_at": "2026-07-25T21:10:06.733590Z",
+    "failure_code": "INSUFFICIENT_FUNDS",
+    "gateway_message": "Insufficient balance in account",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 6,
+      "failed_payments_last_90d": 0,
+      "is_subscription": false
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1076",
+    "payment_id": "pay_54e5fe691d3c4f",
+    "customer_id": "cust_73dbd3ad",
+    "amount": 4756.97,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "failed_at": "2026-07-26T05:18:06.734469Z",
+    "failure_code": "DUPLICATE_CHARGE_ATTEMPT",
+    "gateway_message": "Possible duplicate of a recent successful payment",
+    "retry_count": 5,
+    "customer_history": {
+      "successful_payments_last_90d": 9,
+      "failed_payments_last_90d": 0,
+      "is_subscription": true
+    },
+    "bucket_label": "edge"
+  },
+  {
+    "case_id": "RC-1000",
+    "payment_id": "pay_938873c4e58d45",
+    "customer_id": "cust_546a038b",
+    "amount": 5563.06,
+    "currency": "INR",
+    "payment_method": "card",
+    "failed_at": "2026-08-04T09:18:06.733313Z",
+    "failure_code": "INSUFFICIENT_FUNDS",
+    "gateway_message": "Insufficient balance in account",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 0,
+      "failed_payments_last_90d": 0,
+      "is_subscription": true
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1092",
+    "payment_id": "pay_397b5358201447",
+    "customer_id": "cust_4e198857",
+    "amount": 1432.55,
+    "currency": "INR",
+    "payment_method": "card",
+    "failed_at": "2026-08-18T21:58:06.734670Z",
+    "failure_code": "CARD_REPORTED_LOST",
+    "gateway_message": "Card reported lost/stolen by cardholder",
+    "retry_count": 2,
+    "customer_history": {
+      "successful_payments_last_90d": 12,
+      "failed_payments_last_90d": 1,
+      "is_subscription": true
+    },
+    "bucket_label": "adversarial"
+  },
+  {
+    "case_id": "RC-1043",
+    "payment_id": "pay_217637b325cc44",
+    "customer_id": "cust_dd14f5e2",
+    "amount": 363.33,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "failed_at": "2026-08-01T00:29:06.733958Z",
+    "failure_code": "NETWORK_TIMEOUT",
+    "gateway_message": "Request timed out during authorization",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 6,
+      "failed_payments_last_90d": 5,
+      "is_subscription": true
+    },
+    "bucket_label": "ambiguous"
+  },
+  {
+    "case_id": "RC-1039",
+    "payment_id": "pay_b0a08ba4bab243",
+    "customer_id": "cust_9613e0cb",
+    "amount": 3286.54,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "failed_at": "2026-07-25T16:33:06.733907Z",
+    "failure_code": "UPI_MANDATE_TIMEOUT",
+    "gateway_message": "UPI mandate approval timed out",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 7,
+      "failed_payments_last_90d": 3,
+      "is_subscription": true
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1082",
+    "payment_id": "pay_5d0f90a3275c40",
+    "customer_id": "cust_212edd6e",
+    "amount": 1547.47,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "failed_at": "2026-07-31T22:31:06.734548Z",
+    "failure_code": "MANDATE_CANCELLED",
+    "gateway_message": "UPI/e-mandate was cancelled by the customer",
+    "retry_count": 5,
+    "customer_history": {
+      "successful_payments_last_90d": 10,
+      "failed_payments_last_90d": 5,
+      "is_subscription": false
+    },
+    "bucket_label": "edge"
+  },
+  {
+    "case_id": "RC-1023",
+    "payment_id": "pay_52784602125445",
+    "customer_id": "cust_e8ab5264",
+    "amount": 7009.46,
+    "currency": "INR",
+    "payment_method": "card",
+    "failed_at": "2026-07-25T14:57:06.733661Z",
+    "failure_code": "INSUFFICIENT_FUNDS",
+    "gateway_message": "Insufficient balance in account",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 4,
+      "failed_payments_last_90d": 1,
+      "is_subscription": true
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1080",
+    "payment_id": "pay_14704d228c0948",
+    "customer_id": "cust_1d86e776",
+    "amount": 7220.91,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "failed_at": "2026-08-08T13:08:06.734521Z",
+    "failure_code": "MAX_RETRIES_EXCEEDED",
+    "gateway_message": "Payment already retried 3+ times with no success",
+    "retry_count": 4,
+    "customer_history": {
+      "successful_payments_last_90d": 6,
+      "failed_payments_last_90d": 3,
+      "is_subscription": true
+    },
+    "bucket_label": "edge"
+  },
+  {
+    "case_id": "RC-1034",
+    "payment_id": "pay_498e21bd054447",
+    "customer_id": "cust_1574b313",
+    "amount": 3107.64,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "failed_at": "2026-08-05T18:08:06.733845Z",
+    "failure_code": "INSUFFICIENT_FUNDS",
+    "gateway_message": "Insufficient balance in account",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 6,
+      "failed_payments_last_90d": 5,
+      "is_subscription": false
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1077",
+    "payment_id": "pay_7ab92628cdd44e",
+    "customer_id": "cust_1bdaac29",
+    "amount": 5738.72,
+    "currency": "INR",
+    "payment_method": "card",
+    "failed_at": "2026-08-08T16:36:06.734484Z",
+    "failure_code": "CHURNED_CUSTOMER",
+    "gateway_message": "Customer subscription cancelled prior to this charge",
+    "retry_count": 3,
+    "customer_history": {
+      "successful_payments_last_90d": 4,
+      "failed_payments_last_90d": 0,
+      "is_subscription": true
+    },
+    "bucket_label": "edge"
+  },
+  {
+    "case_id": "RC-1003",
+    "payment_id": "pay_59be7a354bc445",
+    "customer_id": "cust_4e0682f2",
+    "amount": 4696.12,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "failed_at": "2026-08-04T15:35:06.733388Z",
+    "failure_code": "INSUFFICIENT_FUNDS",
+    "gateway_message": "Insufficient balance in account",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 1,
+      "failed_payments_last_90d": 0,
+      "is_subscription": false
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1096",
+    "payment_id": "pay_7732b1b882ab49",
+    "customer_id": "cust_ef0fcc94",
+    "amount": 4599.89,
+    "currency": "INR",
+    "payment_method": "card",
+    "failed_at": "2026-07-28T00:13:06.734718Z",
+    "failure_code": "FRAUD_FLAG",
+    "gateway_message": "Transaction flagged for suspected fraud",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 10,
+      "failed_payments_last_90d": 5,
+      "is_subscription": false
+    },
+    "bucket_label": "adversarial"
+  },
+  {
+    "case_id": "RC-1078",
+    "payment_id": "pay_0ad80bf9e50249",
+    "customer_id": "cust_805af963",
+    "amount": 4054.07,
+    "currency": "INR",
+    "payment_method": "upi",
+    "failed_at": "2026-08-17T17:15:06.734498Z",
+    "failure_code": "DUPLICATE_CHARGE_ATTEMPT",
+    "gateway_message": "Possible duplicate of a recent successful payment",
+    "retry_count": 4,
+    "customer_history": {
+      "successful_payments_last_90d": 9,
+      "failed_payments_last_90d": 3,
+      "is_subscription": false
+    },
+    "bucket_label": "edge"
+  },
+  {
+    "case_id": "RC-1079",
+    "payment_id": "pay_a995c473da364e",
+    "customer_id": "cust_e49d380c",
+    "amount": 2016.73,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "failed_at": "2026-08-01T21:23:06.734509Z",
+    "failure_code": "MAX_RETRIES_EXCEEDED",
+    "gateway_message": "Payment already retried 3+ times with no success",
+    "retry_count": 3,
+    "customer_history": {
+      "successful_payments_last_90d": 12,
+      "failed_payments_last_90d": 3,
+      "is_subscription": false
+    },
+    "bucket_label": "edge"
+  },
+  {
+    "case_id": "RC-1091",
+    "payment_id": "pay_9ab3eead22b844",
+    "customer_id": "cust_c27b242d",
+    "amount": 1658.26,
+    "currency": "INR",
+    "payment_method": "upi",
+    "failed_at": "2026-08-04T15:28:06.734655Z",
+    "failure_code": "CARD_REPORTED_LOST",
+    "gateway_message": "Card reported lost/stolen by cardholder",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 3,
+      "failed_payments_last_90d": 2,
+      "is_subscription": false
+    },
+    "bucket_label": "adversarial"
+  },
+  {
+    "case_id": "RC-1054",
+    "payment_id": "pay_bde30f9001214e",
+    "customer_id": "cust_ccbe2b96",
+    "amount": 2400.61,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "failed_at": "2026-08-07T04:47:06.734189Z",
+    "failure_code": "GATEWAY_ERROR_5XX",
+    "gateway_message": "Payment could not be processed at this time",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 5,
+      "failed_payments_last_90d": 3,
+      "is_subscription": false
+    },
+    "bucket_label": "ambiguous"
+  },
+  {
+    "case_id": "RC-1094",
+    "payment_id": "pay_cea5e885b1c74d",
+    "customer_id": "cust_c36b1d2f",
+    "amount": 6522.31,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "failed_at": "2026-08-08T02:19:06.734694Z",
+    "failure_code": "CARD_REPORTED_LOST_2",
+    "gateway_message": "Issuer confirms card blocked \u2014 lost/stolen report on file",
+    "retry_count": 2,
+    "customer_history": {
+      "successful_payments_last_90d": 0,
+      "failed_payments_last_90d": 3,
+      "is_subscription": false
+    },
+    "bucket_label": "adversarial"
+  },
+  {
+    "case_id": "RC-1073",
+    "payment_id": "pay_82f1762c423441",
+    "customer_id": "cust_0ae80787",
+    "amount": 2964.84,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "failed_at": "2026-08-21T11:33:06.734432Z",
+    "failure_code": "MANDATE_CANCELLED",
+    "gateway_message": "UPI/e-mandate was cancelled by the customer",
+    "retry_count": 3,
+    "customer_history": {
+      "successful_payments_last_90d": 7,
+      "failed_payments_last_90d": 5,
+      "is_subscription": false
+    },
+    "bucket_label": "edge"
+  },
+  {
+    "case_id": "RC-1035",
+    "payment_id": "pay_842fc88a291d4b",
+    "customer_id": "cust_34dfe440",
+    "amount": 1694.84,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "failed_at": "2026-08-08T07:52:06.733858Z",
+    "failure_code": "CARD_EXPIRED",
+    "gateway_message": "Card expired",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 10,
+      "failed_payments_last_90d": 1,
+      "is_subscription": true
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1014",
+    "payment_id": "pay_82390235cd1d43",
+    "customer_id": "cust_91e2bd82",
+    "amount": 202.85,
+    "currency": "INR",
+    "payment_method": "card",
+    "failed_at": "2026-08-15T19:23:06.733539Z",
+    "failure_code": "BANK_DECLINE_GENERIC",
+    "gateway_message": "Declined by issuing bank",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 0,
+      "failed_payments_last_90d": 2,
+      "is_subscription": true
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1047",
+    "payment_id": "pay_ef38c98bbf8b4a",
+    "customer_id": "cust_8e5e044c",
+    "amount": 3568.0,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "failed_at": "2026-07-29T11:10:06.734005Z",
+    "failure_code": "CHECKOUT_ABANDONED",
+    "gateway_message": "Customer closed checkout before completing payment",
+    "retry_count": 2,
+    "customer_history": {
+      "successful_payments_last_90d": 9,
+      "failed_payments_last_90d": 4,
+      "is_subscription": false
+    },
+    "bucket_label": "ambiguous"
+  },
+  {
+    "case_id": "RC-1071",
+    "payment_id": "pay_2a90fd026d7645",
+    "customer_id": "cust_576077b1",
+    "amount": 4555.43,
+    "currency": "INR",
+    "payment_method": "upi",
+    "failed_at": "2026-07-26T20:03:06.734405Z",
+    "failure_code": "MAX_RETRIES_EXCEEDED",
+    "gateway_message": "Payment already retried 3+ times with no success",
+    "retry_count": 3,
+    "customer_history": {
+      "successful_payments_last_90d": 12,
+      "failed_payments_last_90d": 3,
+      "is_subscription": true
+    },
+    "bucket_label": "edge"
+  },
+  {
+    "case_id": "RC-1044",
+    "payment_id": "pay_b6488b6fba944b",
+    "customer_id": "cust_9e101f1a",
+    "amount": 4500.41,
+    "currency": "INR",
+    "payment_method": "card",
+    "failed_at": "2026-08-20T01:53:06.733971Z",
+    "failure_code": "NETWORK_TIMEOUT",
+    "gateway_message": "Request timed out during authorization",
+    "retry_count": 2,
+    "customer_history": {
+      "successful_payments_last_90d": 2,
+      "failed_payments_last_90d": 3,
+      "is_subscription": true
+    },
+    "bucket_label": "ambiguous"
+  },
+  {
+    "case_id": "RC-1013",
+    "payment_id": "pay_ba18dc096f7447",
+    "customer_id": "cust_a3c9a0a6",
+    "amount": 2441.11,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "failed_at": "2026-08-08T05:52:06.733515Z",
+    "failure_code": "UPI_MANDATE_TIMEOUT",
+    "gateway_message": "UPI mandate approval timed out",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 1,
+      "failed_payments_last_90d": 1,
+      "is_subscription": true
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1028",
+    "payment_id": "pay_b23eaa1538a641",
+    "customer_id": "cust_95f226cd",
+    "amount": 6954.36,
+    "currency": "INR",
+    "payment_method": "upi",
+    "failed_at": "2026-07-26T16:29:06.733725Z",
+    "failure_code": "INSUFFICIENT_FUNDS",
+    "gateway_message": "Insufficient balance in account",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 12,
+      "failed_payments_last_90d": 1,
+      "is_subscription": false
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1061",
+    "payment_id": "pay_55785237aa3b42",
+    "customer_id": "cust_1b672d26",
+    "amount": 1300.51,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "failed_at": "2026-08-07T23:42:06.734284Z",
+    "failure_code": "UNKNOWN_DECLINE",
+    "gateway_message": "Transaction declined \u2014 no reason provided by bank",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 7,
+      "failed_payments_last_90d": 2,
+      "is_subscription": true
+    },
+    "bucket_label": "ambiguous"
+  },
+  {
+    "case_id": "RC-1084",
+    "payment_id": "pay_e2cd16e21f0345",
+    "customer_id": "cust_2bb3999b",
+    "amount": 2038.73,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "failed_at": "2026-07-23T12:33:06.734571Z",
+    "failure_code": "MAX_RETRIES_EXCEEDED",
+    "gateway_message": "Payment already retried 3+ times with no success",
+    "retry_count": 5,
+    "customer_history": {
+      "successful_payments_last_90d": 5,
+      "failed_payments_last_90d": 0,
+      "is_subscription": true
+    },
+    "bucket_label": "edge"
+  },
+  {
+    "case_id": "RC-1019",
+    "payment_id": "pay_c61b90ab1e554f",
+    "customer_id": "cust_39b426da",
+    "amount": 7466.36,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "failed_at": "2026-08-18T16:02:06.733604Z",
+    "failure_code": "BANK_DECLINE_GENERIC",
+    "gateway_message": "Declined by issuing bank",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 3,
+      "failed_payments_last_90d": 0,
+      "is_subscription": true
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1027",
+    "payment_id": "pay_4992d27ab7e94f",
+    "customer_id": "cust_93943de7",
+    "amount": 1086.72,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "failed_at": "2026-08-11T20:23:06.733711Z",
+    "failure_code": "CARD_EXPIRED",
+    "gateway_message": "Card expired",
+    "retry_count": 0,
+    "customer_history": {
+      "successful_payments_last_90d": 5,
+      "failed_payments_last_90d": 1,
+      "is_subscription": false
+    },
+    "bucket_label": "clear"
+  },
+  {
+    "case_id": "RC-1064",
+    "payment_id": "pay_08807a5550dd45",
+    "customer_id": "cust_bc9ec21a",
+    "amount": 15344.49,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "failed_at": "2026-08-03T14:19:06.734320Z",
+    "failure_code": "UNKNOWN_DECLINE",
+    "gateway_message": "Transaction declined \u2014 no reason provided by bank",
+    "retry_count": 1,
+    "customer_history": {
+      "successful_payments_last_90d": 1,
+      "failed_payments_last_90d": 1,
+      "is_subscription": false
+    },
+    "bucket_label": "ambiguous"
+  }
+]
