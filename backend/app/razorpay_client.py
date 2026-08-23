@@ -11,6 +11,8 @@ import os
 
 import razorpay
 
+from app import config  # noqa: F401 - load backend/.env before reading env vars
+
 
 def _get_client() -> razorpay.Client:
     key_id = os.environ.get("RAZORPAY_KEY_ID")

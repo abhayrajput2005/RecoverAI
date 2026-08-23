@@ -13,6 +13,8 @@ from datetime import datetime, timezone
 from sqlalchemy import Boolean, Column, DateTime, Float, Integer, String, create_engine
 from sqlalchemy.orm import declarative_base, sessionmaker
 
+from app import config  # noqa: F401 - load backend/.env before reading env vars
+
 DATABASE_URL = os.environ.get("DATABASE_URL", "sqlite:///./recoverai.db")
 
 engine = create_engine(

@@ -19,6 +19,7 @@ import os
 from google import genai
 from pydantic import BaseModel, Field
 
+from app import config  # noqa: F401 - load backend/.env before reading env vars
 from app.classifier import Classification
 from app.models import AgentDecision, RecoveryAction
 
