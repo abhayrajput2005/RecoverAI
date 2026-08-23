@@ -4,16 +4,44 @@
 
 body {
   font-family: 'Inter', sans-serif;
+  background: #10161b;
+  color: #f6f1e4;
 }
 
 .tabular {
   font-variant-numeric: tabular-nums;
 }
 
-/* Visible keyboard focus, respected everywhere */
 :focus-visible {
-  outline: 2px solid #D9A441;
+  outline: 2px solid #d9a441;
   outline-offset: 2px;
+}
+
+.scroll-thin::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.scroll-thin::-webkit-scrollbar-track {
+  background: #18212a;
+}
+.scroll-thin::-webkit-scrollbar-thumb {
+  background: #26323c;
+  border-radius: 4px;
+}
+
+.drawer-enter {
+  animation: slide-in 180ms ease-out;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(12px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

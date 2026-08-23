@@ -35,26 +35,57 @@ def health():
     return {"status": "ok"}
 
 
+def _iso(value):
+    if value is None:
+        return None
+    if hasattr(value, "isoformat"):
+        return value.isoformat()
+    return str(value)
+
+
+def serialize_case(c: CaseRecord) -> dict:
+    """Public case shape for the dashboard. Does not expose evaluation-only fields."""
+    return {
+        "case_id": c.case_id,
+        "payment_id": c.payment_id,
+        "customer_id": c.customer_id,
+        "amount": c.amount,
+        "currency": c.currency,
+        "payment_method": c.payment_method,
+        "failed_at": _iso(c.failed_at),
+        "failure_code": c.failure_code,
+        "gateway_message": c.gateway_message,
+        "retry_count": c.retry_count,
+        "successful_payments_last_90d": c.successful_payments_last_90d,
+        "failed_payments_last_90d": c.failed_payments_last_90d,
+        "is_subscription": c.is_subscription,
+        "status": c.status,
+        "last_action": c.last_action,
+        "last_action_at": _iso(c.last_action_at),
+        "razorpay_reference_id": c.razorpay_reference_id,
+        "recovered_amount": c.recovered_amount,
+        "classification_bucket": c.classification_bucket,
+    }
+
+
 @app.get("/cases")
 def list_cases():
     session = get_session()
     try:
         cases = session.query(CaseRecord).all()
-        return {
-            "cases": [
-                {
-                    "case_id": c.case_id,
-                    "amount": c.amount,
-                    "status": c.status,
-                    "failure_code": c.failure_code,
-                    "retry_count": c.retry_count,
-                    "last_action": c.last_action,
-                    "recovered_amount": c.recovered_amount,
-                    "classification_bucket": c.classification_bucket,
-                }
-                for c in cases
-            ]
-        }
+        return {"cases": [serialize_case(c) for c in cases]}
+    finally:
+        session.close()
+
+
+@app.get("/cases/{case_id}")
+def get_case(case_id: str):
+    session = get_session()
+    try:
+        case = session.query(CaseRecord).filter_by(case_id=case_id).one_or_none()
+        if case is None:
+            raise HTTPException(status_code=404, detail=f"Unknown case_id: {case_id}")
+        return serialize_case(case)
     finally:
         session.close()
 

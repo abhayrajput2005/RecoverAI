@@ -1,50 +1,30 @@
-function formatINR(amount) {
-  if (amount == null) return '—'
-  return `₹${amount.toLocaleString('en-IN', { maximumFractionDigits: 0 })}`
-}
-
-function StatCard({ label, value, accent = 'text-ink', sub }) {
-  return (
-    <div className="bg-paper rounded-sm p-4 border border-paper-dim">
-      <div className="font-sans text-[11px] uppercase tracking-wide text-paper-text/60 mb-1">{label}</div>
-      <div className={`font-mono text-2xl font-semibold tabular ${accent}`}>{value}</div>
-      {sub && <div className="font-sans text-xs text-paper-text/50 mt-1">{sub}</div>}
-    </div>
-  )
-}
+import { formatINR } from '../lib'
 
 export default function MetricsPanel({ metrics }) {
   if (!metrics) {
     return <div className="font-sans text-sm text-paper/50">Loading metrics…</div>
   }
 
-  const fpAlert = metrics.false_positive_cost > 0
+  const fp = metrics.false_positive_cost > 0
+  const fpPending = (metrics.false_positive_case_ids || []).length
 
   return (
     <div>
-      <h2 className="font-display text-2xl text-paper mb-3">Ledger Summary</h2>
-      <div className="grid grid-cols-2 gap-3">
-        <StatCard label="Recovered revenue" value={formatINR(metrics.recovered_revenue)} accent="text-verdigris" />
-        <StatCard label="Recoverable pool" value={formatINR(metrics.potentially_recoverable_revenue)} />
-        <StatCard
-          label="Recovery rate"
-          value={`${(metrics.recovery_rate * 100).toFixed(1)}%`}
-        />
-        <StatCard
-          label="Action success rate"
-          value={`${(metrics.action_success_rate * 100).toFixed(1)}%`}
-        />
-        <StatCard
-          label="Agent accuracy"
-          value={metrics.agent_accuracy != null ? `${(metrics.agent_accuracy * 100).toFixed(1)}%` : '—'}
-          sub={`n=${metrics.agent_accuracy_n}`}
-        />
-        <StatCard
-          label="False-positive cost"
-          value={formatINR(metrics.false_positive_cost)}
-          accent={fpAlert ? 'text-rust' : 'text-verdigris'}
-          sub={fpAlert ? 'Guardrail breach — investigate' : 'Guardrail holding'}
-        />
+      <h2 className="font-display text-xl text-paper mb-3">Risk & accuracy</h2>
+      <div className="space-y-3">
+        <div className="rounded-sm border border-ink-border bg-ink-light p-4">
+          <div className="font-sans text-[11px] uppercase tracking-wide text-paper/45">
+            False-positive cost
+          </div>
+          <div className={`font-mono text-2xl tabular mt-1 ${fp ? 'text-brass' : 'text-verdigris-soft'}`}>
+            {formatINR(metrics.false_positive_cost)}
+          </div>
+          <p className="font-sans text-xs text-paper/50 mt-2 leading-relaxed">
+            {fp
+              ? `${fpPending} adversarial case${fpPending === 1 ? '' : 's'} are not yet in Blocked status (includes unprocessed). Process them through policy — this is not the same as a Razorpay execution.`
+              : 'Every adversarial case is Blocked. Guardrail holding.'}
+          </p>
+        </div>
       </div>
     </div>
   )
