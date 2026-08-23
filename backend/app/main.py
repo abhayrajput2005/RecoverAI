@@ -8,6 +8,7 @@ from app.db import CaseRecord, get_session, init_db
 from app.metrics import compute_metrics
 from app.models import CaseOutcome, CaseStatus, RecoveryAction
 from app.pipeline import approve_case, process_case
+from app.seed import seed_if_empty
 from app.razorpay_client import verify_webhook_signature
 from app.tools.record_outcome import record_outcome
 
@@ -28,6 +29,7 @@ app.add_middleware(
 @app.on_event("startup")
 def on_startup():
     init_db()
+    seed_if_empty()
 
 
 @app.get("/health")
